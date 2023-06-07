@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -13,6 +17,7 @@ body{
 h1{
     font-family: 'Philosopher', sans-serif;
     font-size: 49px;
+    line-height: 58px;
 }
 
 h2{
@@ -22,4 +27,48 @@ h2{
 
 .container{
     margin: 0 auto;
+    max-width: 79%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.menu-wrap {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+} 
+
+.menu-btn {
+    align-self: flex-start;
+    justify-self: flex-end;
+    padding: 13px 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.menu-list {
+    display: flex;
+    gap: 40px;
+}
+
+.header-wrap {
+    background-image: url(/images/bg.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 30px;
+}
+
+.heading-section {
+    padding-top: 130px;
+    padding-bottom: 222px;
+}
+
+.heading-section__inner-wrap {
+    max-width: 50%;
 }
