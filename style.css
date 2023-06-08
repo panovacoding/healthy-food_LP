@@ -12,6 +12,7 @@ button {
 
 body{
     font-family: 'Roboto', sans-serif;
+    line-height: 24px;
 }
 
 h1{
@@ -27,7 +28,7 @@ h2{
 
 .container{
     margin: 0 auto;
-    max-width: 79%;
+    max-width: 77%;
 }
 
 .header {
@@ -50,6 +51,8 @@ h2{
     padding: 13px 30px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    border-radius: 5px;
+    border: none;
 }
 
 .menu-list {
@@ -70,5 +73,59 @@ h2{
 }
 
 .heading-section__inner-wrap {
-    max-width: 50%;
+    max-width: 48%;
+}
+
+.heading-section__inner-wrap > p {
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
+.heading-section__btn-wrap {
+    display: flex;
+    gap: 30px;
+}
+
+.heading-section__button {
+    padding: 18px 41px;
+    border: none;
+    font: inherit;
+    border-radius: 5px;
+}
+
+.heading-section__button--order, .menu-btn {
+    color: #fff;
+    background-color: #DC780B;
+}
+
+.heading-section__button--details {
+    color: #DC780B;
+    border: 1.5px solid rgba(220, 120, 11, 0.1);
+}
+
+.heading-section__button--details:hover {
+    color: #fff;
+    background-color: #DC780B;
+    transition: all 0.4s linear;
+}
+
+.features {
+    text-align: center;
+    color: #DC780B;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.features__heading {
+    text-align: center;
+    padding-top: 7px;
+    line-height: 35px;
+}
+
+.features__list {
+    display: flex;
+    padding-top: 44px;
+    padding-bottom: 120px;
 }
