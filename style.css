@@ -26,9 +26,25 @@ h2{
     font-size: 31px;
 }
 
+h3 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 25px;
+}
+
+p {
+    color: rgba(21, 12, 1, 0.7);
+}
+
 .container{
     margin: 0 auto;
     max-width: 77%;
+}
+
+.orange-letter-spacing {
+    color: rgba(220, 120, 11, 0.7);;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .header {
@@ -49,10 +65,6 @@ h2{
     align-self: flex-start;
     justify-self: flex-end;
     padding: 13px 30px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    border-radius: 5px;
-    border: none;
 }
 
 .menu-list {
@@ -88,14 +100,15 @@ h2{
 
 .heading-section__button {
     padding: 18px 41px;
-    border: none;
     font: inherit;
-    border-radius: 5px;
 }
 
-.heading-section__button--order, .menu-btn {
+.orange-btn {
     color: #fff;
     background-color: #DC780B;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 .heading-section__button--details {
@@ -109,12 +122,12 @@ h2{
     transition: all 0.4s linear;
 }
 
+.features-section {
+    background-color: transparent;
+}
+
 .features {
     text-align: center;
-    color: #DC780B;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    font-weight: 500;
     line-height: 19px;
 }
 
@@ -126,6 +139,88 @@ h2{
 
 .features__list {
     display: flex;
-    padding-top: 44px;
-    padding-bottom: 120px;
+    padding: 44px 0 120px;
+    gap: 90px;
+    max-width: 1080px;
+}
+
+.features__list__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    text-align: center;
+}
+
+.features__list__list-item__heading {
+    padding: 33px 0 15px;
+}
+
+.img-wrap {
+    width: 88px;
+    height: 88px;
+    display: inline-block;
+    background-color: rgba(220, 120, 11, 0.1);
+    border-radius: 50%;
+    padding: 22px;
+}
+
+.background__wrap {
+    background-image: url(/images/bg-stain.svg);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: 244px;
+}
+
+.about-us {
+    display: flex;
+}
+
+.about-us__img {
+    border-radius: 35px;
+}
+
+.about-us__section-name {
+    max-width: 98px;
+}
+
+.about-us__text-wrap {
+    padding-top: 75px;
+    padding-left: 96px;
+}
+
+.about-us__heading {
+    line-height: 41px;
+    margin-top: -5px;
+    max-width: 470px;
+}
+
+.about-us__text {
+    padding: 19px 0 34px;
+    max-width: 470px;
+}
+
+.about-us__button {
+    padding: 12px 0;
+    width: 141px;
+    font-weight: 500;
+}
+
+.menu-section {
+    padding: 120px 0 114px;
+}
+
+.menu-section__text-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-section__heading {
+    padding: 10px 0 32px;
+}
+
+.menu-section__text {
+    max-width: 748px;
+    text-align: center;
 }
