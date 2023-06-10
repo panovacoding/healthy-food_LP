@@ -293,3 +293,80 @@ p {
     background-color: #DC780B;
     transition: all 0.4s linear;
 }
+
+.app-section {
+    margin: 66px 0;
+}
+
+.app-section__wrap {
+    background-color: #FBF1E7;
+    position: relative;
+    padding: 110px 0 129px 105px;
+}
+
+.app-section__text-wrap {
+    max-width: 555px;
+}
+
+.app-section__img {
+    position: absolute;
+    top: -67px;
+    right: 17.5%;
+    border-radius: 55px;
+    box-shadow: 3px 3px 10px 5px rgba(21, 12, 1, 0.2);
+}
+
+.app-section__heading {
+    line-height: 41px;
+    max-width: 440px;
+}
+
+.app-section__text {
+    padding: 19px 0 34px;
+}
+
+.app-section__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 29px;
+    border-radius: 5px;
+}
+
+.app-section__link--apple {
+    color: #fff;
+    background-color: #150C01;
+}
+
+.app-section__link--google {
+    margin-left: 30px;
+    color: #150C01;
+    border: 1.5px solid rgba(21, 12, 1, 0.1);
+}
+
+.testimonial-section {
+    padding: 145px 0 120px;
+    text-align: center;
+}
+
+.testimonial-section__heading {
+    padding: 12px 0 29px;
+}
+
+.testimonial-section__first-paragraph {
+    max-width: 750px;
+    display: inline-block;
+}
+
+.testimonial-section__img-wrap {
+    background-image: url(/images/photo-bg-stain.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 73px 0 42px;
+}
+
+.testimonial-section__img {
+    border-radius: 100px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
