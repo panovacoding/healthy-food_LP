@@ -26,13 +26,15 @@ h2{
     font-size: 31px;
 }
 
-h3 {
-    font-family: 'Philosopher', sans-serif;
-    font-size: 25px;
-}
 
 p {
     color: rgba(21, 12, 1, 0.7);
+}
+
+.philosopher-font-25 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
 }
 
 .container{
@@ -70,6 +72,20 @@ p {
 .menu-list {
     display: flex;
     gap: 40px;
+}
+
+.menu-list > :first-child {
+    font-weight: 600;
+    color: #DC780B;
+}
+
+.menu-list > li > a {
+    color: inherit;
+}
+
+.menu-list > li > a:hover {
+    color: #DC780B;
+    transition: all 0.4s linear;
 }
 
 .header-wrap {
@@ -112,6 +128,7 @@ p {
 }
 
 .heading-section__button--details {
+    border-radius: 5px;
     color: #DC780B;
     border: 1.5px solid rgba(220, 120, 11, 0.1);
 }
@@ -208,6 +225,7 @@ p {
 
 .menu-section {
     padding: 120px 0 114px;
+    text-align: center;
 }
 
 .menu-section__text-wrap {
@@ -223,4 +241,55 @@ p {
 .menu-section__text {
     max-width: 748px;
     text-align: center;
+}
+
+.menu__list {
+    padding: 63px 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 24px;
+}
+
+.menu__list__list-item {
+    max-width: 360px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 75px 10px 10px 10px;
+}
+
+.menu__list__btn {
+    margin-top: 5px;
+    padding: 7px 12px;
+}
+
+.name-and-price__wrap, .btn-and-rating__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__list__list-item__img {
+    border-radius: 75px 10px 75px 0;
+}
+
+.menu__list__list-item__text-wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    padding: 22px;
+}
+
+.menu__button {
+    font: inherit;
+    border-radius: 5px;
+    color: #DC780B;
+    border: 1.5px solid rgba(220, 120, 11, 0.1);
+    padding: 11px 30px 12px 30px;
+    background-color: transparent;
+}
+
+.menu__button:hover {
+    color: #fff;
+    background-color: #DC780B;
+    transition: all 0.4s linear;
 }
