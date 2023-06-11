@@ -224,7 +224,7 @@
             <button type="button" class="menu__button">Learn More</button>
         </section>
     </div>
-        <section class="app-section">
+    <section class="app-section">
             <div class="app-section__wrap">
                 <div class="container">
                     <div class="app-section__text-wrap">
@@ -243,34 +243,59 @@
                 </div>
                 <img width="323" height="651" src="/images/phone.png" alt="phone" class="app-section__img">
             </div>
-        </section>
-        <section class="testimonial-section container">
-            <span class="orange-letter-spacing">Testimonial</span>
-            <h2 class="testimonial-section__heading">Making Food great again and again</h2>
-            <p class="testimonial-section__first-paragraph">You need not only Just Food Stalls with Persons but also specialized equipment, Skills to manage Customers, Effective Product catlogues etc to make your.</p>
-            <div class="swiper-slide">
-                <div class="testimonial-section__img-wrap">
-                    <img width="50" height="50" src="/images/photo.png" alt="girl" class="testimonial-section__img">
-                </div>
-                <div>
-                    <p class="swiper__text">You need not only Just Food Stalls with Persons but also specialized equipment, Skills to manage Customers, Effective Product catlogues etc very successful to make your.</p>
-                    <img src="#" alt="rating">
-                    <span>Augusta W. Reynoso</span>
-                    <span>UI&UX DeSIGNER</span>
+    </section>
+    <section class="testimonial-section container">
+        <span class="orange-letter-spacing">Testimonial</span>
+        <h2 class="testimonial-section__heading">Making Food great again and again</h2>
+        <p class="testimonial-section__first-paragraph">You need not only Just Food Stalls with Persons but also specialized equipment, Skills to manage Customers, Effective Product catlogues etc to make your.</p>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-section__img-wrap">
+                        <img width="50" height="50" src="/images/photo.png" alt="girl" class="testimonial-section__img">
+                    </div>
+                    <div class="swiper__text-wrap">
+                        <p class="swiper__text">You need not only Just Food Stalls with Persons but also specialized equipment, Skills to manage Customers, Effective Product catlogues etc very successful to make your.</p>
+                        <div class="swiper__rating">
+                            <img src="/images/coloured-star.svg" alt="">
+                            <img src="/images/coloured-star.svg" alt="">
+                            <img src="/images/coloured-star.svg" alt="">
+                            <img src="/images/coloured-star.svg" alt="">
+                            <img src="/images/not-coloured-star.svg" alt="">
+                        </div>
+                        <div class="swiper__author-wrap">
+                            <span>Augusta W. Reynoso</span>
+                            <span class="swiper__author-wrap__position">UI&UX DeSIGNER</span>
+                        </div>
+                    </div>
+                    <div class="swiper-navigation">
+                            <button type="button" class="swiper-btn-prev">
+                                <img src="/images/prev.svg" alt="prev">
+                            </button>
+                            <button type="button" class="swiper-btn-next">
+                                <img src="/images/next.svg" alt="next">
+                            </button>
+                        </div>
                 </div>
             </div>
-        </section>
-        <section>
-            <span>Contact</span>
-            <h2>Food Stalls with Persons but also specialized equipment, Skills to manage.</h2>
-            <input type="email" id="email">
-            <label for="email"></label>
-            <button type="submit">Send</button>
-        </section>
-    <footer>
-        <section>
-            <img src="#" alt="logo">
-            <ul>
+        </div>
+    </section>
+    <section class="contact-section">
+        <span class="orange-letter-spacing">Contact</span>
+        <h2 class="contact-section__heading">Food Stalls with Persons but also specialized equipment, Skills to manage.</h2>
+        <div class="contact-section__input-wrap">
+            <label for="email">
+                <input type="email" id="email" class="contact-section__input" placeholder="Enter your message">
+            </label>
+            <button type="submit" class="orange-btn contact-section__button">Send</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-wrap container">
+            <ul class="footer__list">
+                <li>
+                    <img width="60" height="60" src="/images/logo.svg" alt="logo">
+                </li>
                 <li>
                     <a href="#">www.company name.com</a>
                 </li>
@@ -281,9 +306,7 @@
                     Phone: +7 485-118-03-25
                 </li>
             </ul>
-        </section>
-        <section>
-            <ul>
+            <ul class="footer__list">
                 <li>
                     <a href="#">Home</a>
                 </li>
@@ -303,7 +326,7 @@
                     <a href="#">Web Design</a>
                 </li>
             </ul>
-            <ul>
+            <ul class="footer__list">
                 <li>
                     <a href="#">Menu</a>
                 </li>
@@ -323,7 +346,7 @@
                     <a href="#">Web Design</a>
                 </li>
             </ul>
-            <ul>
+            <ul class="footer__list">
                 <li>
                     <a href="#">Company</a>
                 </li>
@@ -337,13 +360,14 @@
                     <a href="#">Referral Program</a>
                 </li>
             </ul>
-            <ul>
+            <ul class="footer__list">
                 <li>insta</li>
                 <li>facebook</li>
                 <li>twitter</li>
                 <li>youtube</li>
             </ul>
-        </section>
+        </div>
     </footer>
+    <script src="/script.js"></script>
 </body>
 </html>

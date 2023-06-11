@@ -347,6 +347,9 @@ p {
 .testimonial-section {
     padding: 145px 0 120px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .testimonial-section__heading {
@@ -360,13 +363,111 @@ p {
 
 .testimonial-section__img-wrap {
     background-image: url(/images/photo-bg-stain.svg);
-    background-position: center;
+    background-position-y: center;
+    background-position-x: 43%;
     background-repeat: no-repeat;
     padding: 73px 0 42px;
 }
 
 .testimonial-section__img {
     border-radius: 100px;
-    margin-left: 50px;
     margin-top: 10px;
+}
+
+.swiper-slide {
+    max-width: 506px;
+    position: relative;
+}
+
+.swiper__text-wrap {
+    margin-top: -15px;
+}
+
+.swiper__rating {
+    margin-top: 12px;
+}
+
+.swiper__author-wrap {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding-top: 22px;
+}
+
+.swiper__author-wrap__position {
+    font-size: 12px;
+}
+
+.swiper-navigation {
+    width: 159%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 204px;
+    left: -146px;
+}
+
+.swiper-navigation > button {
+    border: none;
+    background-color: transparent;
+    width: 6px;
+    height: 12px;
+}
+
+.contact-section {
+    background-color: #FBF1E7;
+    padding: 106px 0 115px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section__heading {
+    line-height: 41px;
+    max-width: 749px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.contact-section__input-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.contact-section__input {
+    padding: 28px 0 28px 28px;
+    width: 594px;
+    border: none;
+    border-radius: 5px;
+    font: inherit;
+}
+
+.contact-section__button {
+    padding: 30px 57px;
+}
+
+.footer {
+    background-color: #252525;
+}
+
+.footer-wrap {
+    display: flex;
+    gap: 120px;
+    padding: 137px 0 104px;
+}
+
+.footer__list {
+    color: #fff;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.footer__list > li > a {
+    color: #fff;
+    opacity: 0.7;
+}
+
+.first-list-item {
+    margin-bottom: 25px;
 }
