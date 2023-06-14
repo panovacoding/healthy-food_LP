@@ -453,21 +453,50 @@ p {
 
 .footer-wrap {
     display: flex;
-    gap: 120px;
+    justify-content: space-between;
     padding: 137px 0 104px;
 }
 
 .footer__list {
     color: #fff;
-    opacity: 0.7;
     font-size: 14px;
+    line-height: 16px;
 }
 
 .footer__list > li > a {
     color: #fff;
-    opacity: 0.7;
 }
 
-.first-list-item {
-    margin-bottom: 25px;
+.footer__list > li > a:hover {
+    color: #676666;
+    transition: all 0.4s linear;
+}
+
+.padding-bottom-25 {
+    padding-bottom: 15px;
+}
+
+.philosopher-font-18 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer__list > li {
+    padding-bottom: 20px;
+}
+
+.footer__list--socials {
+    display: flex;
+    gap: 10px;
+}
+
+.socials-icon {
+    width: 21px;
+    height: 21px;
+}
+
+.socials-icon:hover {
+    opacity: 0.7;
+    transition: all 0.4s linear;
 }
