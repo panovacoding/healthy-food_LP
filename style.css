@@ -350,6 +350,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .testimonial-section__heading {
@@ -374,9 +375,12 @@ p {
     margin-top: 10px;
 }
 
+.swiper {
+    width: 506px;
+}
+
 .swiper-slide {
-    max-width: 506px;
-    position: relative;
+    width: 506px;
 }
 
 .swiper__text-wrap {
@@ -399,12 +403,20 @@ p {
 }
 
 .swiper-navigation {
-    width: 159%;
+    width: 805px;
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 204px;
-    left: -146px;
+    top: 486px;
+    left: 166px;
+}
+
+.swiper-btn > svg {
+    stroke: #150C01;
+}
+
+.swiper-btn:disabled > svg {
+    stroke: #8b8b8b;
 }
 
 .swiper-navigation > button {

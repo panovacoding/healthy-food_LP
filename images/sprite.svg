@@ -1,5 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg">
 
+<symbol id="prev" width="10" height="16" viewBox="0 0 10 16" fill="none">
+    <path d="M8 14L2 8L8 2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="next" width="10" height="16" viewBox="0 0 10 16" fill="none">
+    <path d="M2 2L8 8L2 14" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+
 <symbol id="insta" width="21" height="21" viewBox="0 0 21 21" fill="none">
     <path d="M10.5 21C16.299 21 21 16.299 21 10.5C21 4.70101 16.299 0 10.5 0C4.70101 0 0 4.70101 0 10.5C0 16.299 4.70101 21 10.5 21Z" fill="#6C27B3"/>
     <path d="M15.3689 5.452C14.1144 5.61081 12.8063 5.60527 11.4899 5.47993C9.65146 5.33851 6.96461 4.49002 5.97469 6.187C4.38444 8.90371 5.16878 12.3818 5.53935 15.4597L11.0657 20.9849C16.4136 20.7009 20.6997 16.4154 20.9845 11.0677L15.3689 5.452Z" fill="#501A96"/>
