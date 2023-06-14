@@ -72,6 +72,7 @@ p {
 .menu-list {
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .menu-list > :first-child {
@@ -93,15 +94,29 @@ p {
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: 30px;
+    @media screen and (max-width:1200px) {
+        background-size: 700px 580px;
+    }
+    @media screen and (max-width:1000px) {
+        background-image: none;
+    }
 }
 
 .heading-section {
     padding-top: 130px;
     padding-bottom: 222px;
+    @media screen and (max-width:1200px) {
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
 }
 
 .heading-section__inner-wrap {
     max-width: 48%;
+    @media screen and (max-width:1000px) {
+        max-width: 100%;
+        text-align: center;
+    }
 }
 
 .heading-section__inner-wrap > p {
@@ -156,6 +171,8 @@ p {
 
 .features__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 44px 0 120px;
     gap: 90px;
     max-width: 1080px;
@@ -189,8 +206,17 @@ p {
     background-position-y: 244px;
 }
 
+.about-us-section {
+    display: flex;
+}
+
 .about-us {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 96px;
+    row-gap: 30px;
 }
 
 .about-us__img {
@@ -201,10 +227,6 @@ p {
     max-width: 98px;
 }
 
-.about-us__text-wrap {
-    padding-top: 75px;
-    padding-left: 96px;
-}
 
 .about-us__heading {
     line-height: 41px;
@@ -226,6 +248,9 @@ p {
 .menu-section {
     padding: 120px 0 114px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .menu-section__text-wrap {
@@ -248,7 +273,11 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    column-gap: 24px;
     row-gap: 24px;
+    @media screen and (max-width: 1464px) {
+        justify-content: center;
+    }
 }
 
 .menu__list__list-item {
@@ -376,11 +405,11 @@ p {
 }
 
 .swiper {
-    width: 506px;
+    width: 34vw;
 }
 
 .swiper-slide {
-    width: 506px;
+    width: 26vw;
 }
 
 .swiper__text-wrap {
@@ -403,12 +432,12 @@ p {
 }
 
 .swiper-navigation {
-    width: 805px;
+    width: 71%;
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 486px;
-    left: 166px;
+    top: 65.2%;
+    left: 14.7%;
 }
 
 .swiper-btn > svg {
@@ -449,7 +478,7 @@ p {
 
 .contact-section__input {
     padding: 28px 0 28px 28px;
-    width: 594px;
+    width: 40vw;
     border: none;
     border-radius: 5px;
     font: inherit;
@@ -465,6 +494,7 @@ p {
 
 .footer-wrap {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 137px 0 104px;
 }
