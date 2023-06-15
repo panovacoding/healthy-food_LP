@@ -343,11 +343,26 @@ p {
     max-width: 360px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 75px 10px 10px 10px;
+    @media screen and (max-width: 768px) {
+        max-width: 200px;
+        height: auto;
+    }
 }
 
 .menu__list__btn {
     margin-top: 5px;
     padding: 7px 12px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .name-and-price__wrap {
+        font-size: 18px;
+    }
+
+    .name-and-price__wrap ~ p {
+        font-size: 14px;
+    }
 }
 
 .name-and-price__wrap, .btn-and-rating__wrap {
@@ -358,6 +373,10 @@ p {
 
 .menu__list__list-item__img {
     border-radius: 75px 10px 75px 0;
+    @media screen and (max-width: 768px) {
+        width: 200px;
+        height: auto;
+    }
 }
 
 .menu__list__list-item__text-wrap {
