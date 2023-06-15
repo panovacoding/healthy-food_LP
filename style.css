@@ -87,8 +87,12 @@ p {
 .menu-list--mob {
     @media screen and (max-width: 890px) {
         display: flex;
-        gap: 40px;
+        flex-direction: column;
+        gap: 10px;
         justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 30px;
     }
     @media screen and (min-width: 890px) {
         display: none;
