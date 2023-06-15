@@ -85,10 +85,16 @@ p {
 }
 
 .menu-list--mob {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
+    @media screen and (max-width: 890px) {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+    }
+    @media screen and (min-width: 890px) {
+        display: none;
+    }
 }
+
 
 .menu-list--mob>:first-child>a {
     font-weight: 600;
