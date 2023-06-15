@@ -123,7 +123,7 @@ p {
 }
 
 .header-wrap {
-    background-image: url(/images/bg.png);
+    background-image: url(images/bg.png);
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: 30px;
@@ -245,7 +245,7 @@ p {
 }
 
 .background__wrap {
-    background-image: url(/images/bg-stain.svg);
+    background-image: url(images/bg-stain.svg);
     background-repeat: no-repeat;
     background-position-x: left;
     background-position-y: 244px;
@@ -450,7 +450,7 @@ p {
 }
 
 .testimonial-section__img-wrap {
-    background-image: url(/images/photo-bg-stain.svg);
+    background-image: url(images/photo-bg-stain.svg);
     background-position-y: center;
     background-position-x: 43%;
     background-repeat: no-repeat;
