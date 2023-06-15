@@ -7,7 +7,7 @@
 }
 
 .hidden {
-    visibility: hidden;
+    display: none;
 }
 
 .display-flex {
@@ -284,6 +284,9 @@ p {
 
 .about-us__section-name {
     max-width: 98px;
+    @media screen and (max-width:1455px) {
+        max-width: 100%;
+    }
 }
 
 
@@ -296,6 +299,12 @@ p {
 .about-us__text {
     padding: 19px 0 34px;
     max-width: 470px;
+}
+
+.about-us__text-wrap {
+    @media screen and (max-width:1455px) {
+        text-align: center;
+    }
 }
 
 .about-us__button {
@@ -393,6 +402,7 @@ p {
     border: 1.5px solid rgba(220, 120, 11, 0.1);
     padding: 11px 30px 12px 30px;
     background-color: transparent;
+    align-self: center;
 }
 
 .menu__button:hover {
@@ -419,6 +429,9 @@ p {
 
 .app-section__text-wrap {
     max-width: 555px;
+    @media screen and (max-width: 1380px) {
+        max-width: 100%;
+    }
 }
 
 .app-section__img {
@@ -435,6 +448,9 @@ p {
 .app-section__heading {
     line-height: 41px;
     max-width: 440px;
+    @media screen and (max-width: 1380px) {
+        max-width: 100%;
+    }
 }
 
 .app-section__text {
@@ -458,6 +474,10 @@ p {
     margin-left: 30px;
     color: #150C01;
     border: 1.5px solid rgba(21, 12, 1, 0.1);
+    @media screen and (max-width:543px) {
+        margin-left: 0;
+        margin-top: 10px;
+    }
 }
 
 .testimonial-section {
@@ -525,6 +545,7 @@ p {
     position: absolute;
     top: 65.2%;
     left: 14.7%;
+    overflow: hidden;
 }
 
 .swiper-btn > svg {
@@ -538,8 +559,8 @@ p {
 .swiper-navigation > button {
     border: none;
     background-color: transparent;
-    width: 6px;
-    height: 12px;
+    width: 10px;
+    height: 16px;
 }
 
 .contact-section {
@@ -569,10 +590,18 @@ p {
     border: none;
     border-radius: 5px;
     font: inherit;
+    @media screen and (max-width: 520px) {
+        padding: 10px 0 10px 10px;
+        font-size: 12px;
+    }
 }
 
 .contact-section__button {
     padding: 30px 57px;
+    @media screen and (max-width: 520px) {
+        padding: 10px;
+        font-size: 14px;
+    }
 }
 
 .footer {

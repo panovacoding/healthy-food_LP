@@ -21,8 +21,9 @@ const swiper = new Swiper('.swiper', {
   });
 
 const burgerBtn = document.querySelector('.burger-btn');
-const menuNav = document.querySelector('.menu-list--mob');
+const menuNav = document.querySelector('.mob-menu-js');
 
 burgerBtn.addEventListener('click', () => {
   menuNav.classList.toggle('hidden');
-})
+  menuNav.classList.toggle('menu-list--mob');
+});
