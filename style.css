@@ -6,6 +6,14 @@
     text-decoration: none;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
+.display-flex {
+    display: flex;
+}
+
 button {
     cursor: pointer;
 }
@@ -61,18 +69,43 @@ p {
     display: flex;
     align-items: center;
     gap: 35px;
+    @media screen and (max-width: 890px) {
+        gap: 0;
+    }
 } 
 
 .menu-btn {
     align-self: flex-start;
     justify-self: flex-end;
     padding: 13px 30px;
+    @media screen and (max-width: 890px) {
+        padding: 10px 15px;
+        justify-self: center;
+    }
+}
+
+.menu-list--mob {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.menu-list--mob>:first-child>a {
+    font-weight: 600;
+    color: #DC780B;
+}
+
+.menu-list--mob > li > a {
+    color: inherit;
 }
 
 .menu-list {
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
+    @media screen and (max-width: 890px) {
+        display: none;
+    }
 }
 
 .menu-list > :first-child {
@@ -99,6 +132,18 @@ p {
     }
     @media screen and (max-width:1000px) {
         background-image: none;
+    }
+}
+
+.burger-btn {
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    @media screen and (max-width: 890px) {
+        display: flex;
     }
 }
 
@@ -221,6 +266,10 @@ p {
 
 .about-us__img {
     border-radius: 35px;
+    @media screen and (max-width: 555px) {
+        width: 320px;
+        height: auto;
+    }
 }
 
 .about-us__section-name {
@@ -331,6 +380,12 @@ p {
     background-color: #FBF1E7;
     position: relative;
     padding: 110px 0 129px 105px;
+    @media screen and (max-width: 1380px) {
+        text-align: center;
+        max-width: 100%;
+        padding: 50px 30px;
+        display: flex;
+    }
 }
 
 .app-section__text-wrap {
@@ -343,6 +398,9 @@ p {
     right: 17.5%;
     border-radius: 55px;
     box-shadow: 3px 3px 10px 5px rgba(21, 12, 1, 0.2);
+    @media screen and (max-width: 1380px) {
+        display: none;
+    }
 }
 
 .app-section__heading {
@@ -497,6 +555,10 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 137px 0 104px;
+    @media screen and (max-width: 890px) {
+        flex-direction: column wrap;
+        row-gap: 20px;
+    }
 }
 
 .footer__list {

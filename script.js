@@ -18,4 +18,11 @@ const swiper = new Swiper('.swiper', {
         block: 'start',
       })
     })
-  })
+  });
+
+const burgerBtn = document.querySelector('.burger-btn');
+const menuNav = document.querySelector('.menu-list--mob');
+
+burgerBtn.addEventListener('click', () => {
+  menuNav.classList.toggle('hidden');
+})
